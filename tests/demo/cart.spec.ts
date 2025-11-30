@@ -17,6 +17,6 @@ test('add product to cart successfully',async ({page}) => {
     await filterProductPage.viewCart();
     // await filterProductPage.verifyDataCart();
 
-    await page.waitForTimeout(5000);
+    await page.waitForTimeout(9000);
 
 })
