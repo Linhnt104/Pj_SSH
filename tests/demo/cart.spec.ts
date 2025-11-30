@@ -12,11 +12,10 @@ test('add product to cart successfully',async ({page}) => {
     await homePage.clickSignUpOrLoginButton();
     await loginPage.loginWithValidAccount("admin234@gmail.com","123456");
     await filterProductPage.scrollPage();
-    // await filterProductPage.viewDetailProduct();
     await filterProductPage.verifyAddedDialog();
     await filterProductPage.viewCart();
     // await filterProductPage.verifyDataCart();
 
-    await page.waitForTimeout(9000);
+    await page.waitForTimeout(10000);
 
 })
